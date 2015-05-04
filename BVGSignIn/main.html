@@ -1,15 +1,54 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">  
-<head>  
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />  
-<title>User Management System (Tom Cameron for NetTuts)</title>
-<link rel="stylesheet" href="style.css" type="text/css" />
-<script type = "text/javascript" src = "JS/jquery-2.1.1.js"></script>
-<script type = "text/javascript" src = "JS/jquery-ui"></script>
-<script type = "text/javascript" src = "JS/scriptMain.js"></script>
-</head>  
-<body>  
-Welcome, <span id = "firstName"></span> <span id = "lastName"></span>.
-<div id = "logOut">Log out.</div>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>BVG Student System - Home</title>
+    <link rel="stylesheet" href="CSS/bootstrap.css" type="text/css" />
+    <link rel="stylesheet" href="CSS/styleMain.css" type="text/css" />
+    <script type="text/javascript" src="JS/jquery-2.1.1.js"></script>
+    <script type="text/javascript" src="JS/jquery-ui"></script>
+    <script type="text/javascript" src="JS/scriptMain.js"></script>
+    <script type="text/javascript" src="JS/bootstrap.js"></script>
+
+</head>
+
+<body>
+    <div id="wrapper">
+
+        <div id="title">
+            <h1>Bayview Glen Student System</h1>
+        </div>
+
+        <div id="main">
+            <div id="welcome">Welcome, <span id="firstName"></span> <span id="lastName"></span>.
+                <div class="btn-group" id = "settingsButtonGroup">
+                    <button type="button" class = "btn" id = "settingsButton" data-toggle="dropdown" aria-expanded="true">
+                        <span class="glyphicon glyphicon-cog" aria-hidden="true"></span>
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-right" role="menu">
+                        <li><a href="changePassword.html">Change password</a>
+                        </li>
+                        <li><a href="#">Change profile photo</a>
+                        </li>
+                        <li class="divider"></li>
+                        <li id = "logOut"><a href="#"><b><span id = "redBold">Log out</span></b></a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+            <div id="imageContainer">
+                <div id="userImage"></div>
+            </div>
+            <div id="currentStatus"></div>
+            <div id="button"></div>
+            
+        </div>
+
+        <div id="footer">2015, Bayview Glen. Aaron Strahle, George Marinosyan.</div>
+
+    </div>
 </body>
+
 </html>
