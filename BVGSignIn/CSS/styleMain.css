@@ -88,7 +88,7 @@ h1{
     -moz-border-radius: 100px;
     -webkit-border-radius: 100px;
     border-radius: 100px;
-    background-image: url(../images/man.jpg);
+    background-color: #D2D2D2;
     background-position:50% 50%;
     background-repeat:no-repeat;   
     background-size: cover; 

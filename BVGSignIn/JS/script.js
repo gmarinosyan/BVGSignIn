@@ -7,7 +7,7 @@ $(document).ready(function() {
         data: null, //Form variables
         success: function(response) {
             if (response != 404) {
-                window.location.href = "main.html";
+                window.location.href = "main.html?" + Date.now();
             }
         },
         error: function(xhr, ajaxOptions, thrownError) {

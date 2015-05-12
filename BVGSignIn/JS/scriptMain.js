@@ -1,7 +1,7 @@
 var student_id, firstName, lastName, status, test;
 
 $(document).ready(function() {
-    getData(updateNames, updateButton);
+    getData(updateInfo, updateButton);
 
     $('#logOut').click(function() {
         jQuery.ajax({
@@ -48,10 +48,6 @@ $(document).ready(function() {
 
     });
 
-$('#settingsButton').click(function(){
-    $(".menu").dropit();
-});
-
 });
 
 function getData(callback, callback2) {
@@ -80,9 +76,10 @@ function getData(callback, callback2) {
     });
 }
 
-function updateNames() {
+function updateInfo() {
     $('#firstName').html(firstName);
     $('#lastName').html(lastName);
+    $('#userImage').css("background-image", "url(profilePics/" + student_id + ".jpg)");
 }
 
 function updateButton() {

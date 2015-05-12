@@ -70,7 +70,7 @@ h1{
 
 #userImage {
     position: absolute;
-    left: 50px;
+    left: 30px;
     top: 30px;
     width: 200px;
     height: 200px;
@@ -89,7 +89,7 @@ h1{
 	position:relative;
 	margin-top: 30px;
 	margin: 0 auto;
-	width:700px;
+	width:500px;
 	height: 250px;
 }
 
@@ -107,9 +107,9 @@ h1{
 
 #textFields{
 	position: absolute;
-	width: 400px;
-	top: 50px;
-	right: 0;
+	width: 200px;
+	top: 100px;
+	right: 30px;
 }
 
 .button{
@@ -129,4 +129,15 @@ h1{
 .button:hover{
   background: #246A99;
 
+}
+
+#uploadInfo{
+	font-size: 12px;
+	font-family: RobotoLight;
+	margin-top: 10px;
+	margin-left: 6px;
+}
+
+#file{
+	margin-left: 6px;
 }
