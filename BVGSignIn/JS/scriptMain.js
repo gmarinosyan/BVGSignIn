@@ -6,7 +6,7 @@ $(document).ready(function() {
     $('#logOut').click(function() {
         jQuery.ajax({
             type: "POST", // HTTP method POST or GET
-            url: "logout.php", //Where to make Ajax calls
+            url: "services/logout.php", //Where to make Ajax calls
             dataType: "text", // Data type, HTML, json etc.
             data: null, //Form variables
             success: function(response) {
@@ -28,7 +28,7 @@ $(document).ready(function() {
         if (confirm(prompt)) {
             jQuery.ajax({
                 type: "POST", // HTTP method POST or GET
-                url: "changeStatus.php", //Where to make Ajax calls
+                url: "services/changeStatus.php", //Where to make Ajax calls
                 dataType: "text", // Data type, HTML, json etc.
                 data: null, //Form variables
                 success: function(response) {
@@ -53,7 +53,7 @@ $(document).ready(function() {
 function getData(callback, callback2) {
     jQuery.ajax({
         type: "POST", // HTTP method POST or GET
-        url: "getData.php", //Where to make Ajax calls
+        url: "services/getData.php", //Where to make Ajax calls
         dataType: "text", // Data type, HTML, json etc.
         data: null, //Form variables
         success: function(response) {

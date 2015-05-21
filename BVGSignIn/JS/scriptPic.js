@@ -10,7 +10,7 @@ $(document).ready(function() {
         event.preventDefault();
         jQuery.ajax({
             type: "POST", // HTTP method POST or GET
-            url: "changePic.php", //Where to make Ajax calls
+            url: "services/changePic.php", //Where to make Ajax calls
             contentType: false,
             cache: false,
             processData: false,
@@ -47,7 +47,7 @@ $(document).ready(function() {
 function getData(callback, callback2) {
     jQuery.ajax({
         type: "POST", // HTTP method POST or GET
-        url: "getData.php", //Where to make Ajax calls
+        url: "services/getData.php", //Where to make Ajax calls
         dataType: "text", // Data type, HTML, json etc.
         data: null, //Form variables
         success: function(response) {

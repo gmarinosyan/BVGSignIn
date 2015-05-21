@@ -18,7 +18,7 @@ $(document).ready(function() {
                 var myData = 'existingPass=' + $("#existingPass").val() + "&newPass=" + $("#newPass").val();
                 jQuery.ajax({
                     type: "POST", // HTTP method POST or GET
-                    url: "changePass.php", //Where to make Ajax calls
+                    url: "services/changePass.php", //Where to make Ajax calls
                     dataType: "text", // Data type, HTML, json etc.
                     data: myData, //Form variables
                     success: function(response) {
@@ -51,7 +51,7 @@ $(document).ready(function() {
 function getData(callback, callback2) {
     jQuery.ajax({
         type: "POST", // HTTP method POST or GET
-        url: "getData.php", //Where to make Ajax calls
+        url: "services/getData.php", //Where to make Ajax calls
         dataType: "text", // Data type, HTML, json etc.
         data: null, //Form variables
         success: function(response) {

@@ -1,7 +1,7 @@
 <?php include "base.php"; 
 $mysqli = new mysqli($dbhost, $dbuser, $dbpass, $dbname);
 
-if(isset($_SESSION['loggedIn'])){
+if(isset($_SESSION['studentLoggedIn'])){
 	$student_id = $_SESSION['student_id'];
 
 	if($_SESSION['status'] == "1"){
@@ -14,6 +14,7 @@ if(isset($_SESSION['loggedIn'])){
 		$registerquery = $mysqli->query("INSERT INTO operations (student_id, time, type) VALUES('$student_id', NOW(), '1')");
 		echo 1;
 	}
+
 }
 else{
 	echo 404;
