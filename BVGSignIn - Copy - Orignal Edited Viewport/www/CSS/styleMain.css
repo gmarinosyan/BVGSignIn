@@ -1,0 +1,162 @@
+html{
+	height:100%;
+}
+body{
+	width: 100%;
+	min-height: 100%;
+	padding: 0;
+	margin: 0;
+}
+#wrapper{
+	position:absolute;
+	min-height: 100%;
+	width: 100%;
+	min-width: 600px;
+}
+
+#main{
+	min-width: 600px;
+	padding-bottom: 70px;
+}
+
+h1{
+	margin:0;
+	text-align: center;
+	font-family: Manifesto;
+	font-size: 50px;
+	color: white;
+}
+
+#title{
+	width: 100%;
+	background-color: #3498db;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+#footer{
+	width: 100%;
+	background-color: #E2E2E2;
+	position: absolute;
+	padding-top: 10px;
+	padding-bottom: 8px;
+	padding-left: 8px;
+	bottom: 0px;
+	color: gray;
+	font-family: RobotoLight;
+	font-size: 13px;
+
+}
+
+#welcome{
+	text-align: center;
+	width:500px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 30px;
+	font-family: RobotoLight;
+	font-size: 40px;
+	color: #3498db;
+}
+
+@font-face {
+    font-family: Manifesto;
+    src: url(manifesto.ttf);
+}
+
+@font-face {
+    font-family: RobotoRegular;
+    src: url(Roboto-Regular.ttf);
+}
+
+@font-face {
+    font-family: RobotoMedium;
+    src: url(Roboto-Medium.ttf);
+}
+
+@font-face {
+    font-family: RobotoLight;
+    src: url(Roboto-Light.ttf);
+}
+
+#userImage {
+    display: block;
+    margin: 0 auto;
+    width: 200px;
+    height: 200px;
+    background: #E6E7ED;
+    -moz-border-radius: 100px;
+    -webkit-border-radius: 100px;
+    border-radius: 100px;
+    background-color: #D2D2D2;
+    background-position:50% 50%;
+    background-repeat:no-repeat;   
+    background-size: cover; 
+}
+
+#imageContainer{
+	position:relative;
+	margin-top: 30px;
+	width:100%;
+}
+
+#currentStatus{
+	text-align: center;
+	font-family: RobotoRegular;
+	font-size: 20px;
+	margin-top: 20px;
+}
+
+b{
+	color:#3498db;
+}
+
+#button{
+	text-align: center;
+	margin-top: 20px;
+}
+
+#statusButton{
+  -webkit-border-radius: 4;
+  -moz-border-radius: 4;
+  border-radius: 4px;
+  font-family: RobotoRegular;
+  color: #ffffff;
+  font-size: 20px;
+  background: #3498db;
+  padding: 8px 15px 8px 15px;
+  border: 0px;
+}
+
+#statusButton:hover{
+  -webkit-border-radius: 4;
+  -moz-border-radius: 4;
+  border-radius: 4px;
+  font-family: RobotoRegular;
+  color: #ffffff;
+  font-size: 20px;
+  background: #246A99;
+  padding: 8px 15px 8px 15px;
+  border: 0px;
+}
+
+#settingsButtonGroup{
+	position: absolute;
+	right: 30px;
+}
+
+#settingsButton{
+	top: 10px;
+	background-color: rgba(0,0,0,0);
+	font-size: 30px;
+	padding:0 0 0 0;
+}
+
+#redBold{
+	color:#3498db;
+	font-style: bold;
+}
+
+.dropdown-menu{
+	font-family: RobotoRegular;
+}

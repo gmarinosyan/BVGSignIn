@@ -1,0 +1,132 @@
+html{
+	height:100%;
+}
+body{
+	width: 100%;
+	min-height: 100%;
+	padding: 0;
+	margin: 0;
+}
+#wrapper{
+	position:absolute;
+	min-height: 100%;
+	width: 100%;
+	min-width: 600px;
+}
+
+#main{
+	width: 100%;
+	min-width: 600px;
+	padding-bottom: 70px;
+}
+
+h1{
+	margin:0;
+	text-align: center;
+	font-family: Manifesto;
+	font-size: 50px;
+	color: white;
+}
+
+#title{
+	width: 100%;
+	background-color: #3498db;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+#footer{
+	width: 100%;
+	background-color: #E2E2E2;
+	position: absolute;
+	padding-top: 10px;
+	padding-bottom: 8px;
+	padding-left: 8px;
+	bottom: 0px;
+	color: gray;
+	font-family: RobotoLight;
+	font-size: 13px;
+}
+
+@font-face {
+    font-family: Manifesto;
+    src: url(manifesto.ttf);
+}
+
+@font-face {
+    font-family: RobotoRegular;
+    src: url(Roboto-Regular.ttf);
+}
+
+@font-face {
+    font-family: RobotoMedium;
+    src: url(Roboto-Medium.ttf);
+}
+
+@font-face {
+    font-family: RobotoLight;
+    src: url(Roboto-Light.ttf);
+}
+
+#userImage {
+    position: absolute;
+    left: 50px;
+    top: 30px;
+    width: 200px;
+    height: 200px;
+    background: #E6E7ED;
+    -moz-border-radius: 100px;
+    -webkit-border-radius: 100px;
+    border-radius: 100px;
+    background-color: #D2D2D2;
+    background-position:50% 50%;
+    background-repeat:no-repeat;   
+    background-size: cover; 
+}
+
+
+#centerContainer{
+	position:relative;
+	margin-top: 30px;
+	margin: 0 auto;
+	width:700px;
+	height: 250px;
+}
+
+.textBox{
+	border-radius: 5px;
+	border: solid 1px #B1B1B1;
+	width: 300px;
+	height: 30px;
+	margin: 5px;
+	padding: 5px;
+	font-family: RobotoMedium;
+	font-size: 15px;
+	color: #3498db;
+}
+
+#textFields{
+	position: absolute;
+	width: 400px;
+	top: 50px;
+	right: 0;
+}
+
+.button{
+	-webkit-border-radius: 4;
+  -moz-border-radius: 4;
+  border-radius: 4px;
+  font-family: RobotoRegular;
+  color: #ffffff;
+  font-size: 15px;
+  background: #3498db;
+  padding: 8px 15px 8px 15px;
+  margin-left: 5px;
+  margin-top : 13px;
+  border: 0px;
+}
+
+.button:hover{
+  background: #246A99;
+
+}
