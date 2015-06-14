@@ -1,0 +1,57 @@
+<!-- This is the page that contains a log of all of the "Sign In" and "Sign Out" operations for a particular student user. It can only be accessed by an administrator and lists all of the student's operations in a chart. -->
+
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>BVG Student System</title>
+    <link rel="stylesheet" href="CSS/bootstrap.css" type="text/css" />
+    <link rel="stylesheet" href="CSS/styleStudentDetail.css" type="text/css" />
+    <script type="text/javascript" src="JS/jquery-2.1.1.js"></script>
+    <script type="text/javascript" src="JS/jquery-ui"></script>
+    <script type="text/javascript" src="JS/scriptStudentDetail.js"></script>
+    <script type="text/javascript" src="JS/bootstrap.js"></script>
+
+</head>
+
+<body>
+    <div id="wrapper">
+
+        <div id="title">
+            <h1>Bayview Glen Student System</h1>
+        </div>
+
+        <div id="main">
+
+            <button type="button" class="btn" id="backButton">
+                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+            </button>
+
+            <div class="btn-group" id="settingsButtonGroup">
+                <button type="button" class="btn" id="settingsButton" data-toggle="dropdown" aria-expanded="true">
+                    <span class="glyphicon glyphicon-cog" aria-hidden="true"></span>
+                </button>
+                <ul class="dropdown-menu dropdown-menu-right" role="menu">
+                    <li id="deleteStudent"><a href="#">Delete Student</a>
+                    </li>
+                    <li class="divider"></li>
+                    <li id="logOut"><a href="#"><b><span id = "redBold">Log out</span></b></a>
+                    </li>
+                </ul>
+            </div>
+
+            <div id="tableWrap">
+                <table id="studentOperations">
+                    <tr>
+                        <th class='left head'>Type</th>
+                        <th class = 'head'>Time</th>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+        <div id="footer">2015, Bayview Glen. Aaron Strahle, George Marinosyan.</div>
+
+</body>
+
+</html>

@@ -1,0 +1,62 @@
+<!-- This is the page which allows for new user registration. This is only accessible by the administrator. Either a new student user or administrator user can be created. -->
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>BVG Student System</title>
+    <link rel="stylesheet" href="CSS/bootstrap.css" type="text/css" />
+    <link rel="stylesheet" href="CSS/styleAddUser.css" type="text/css" />
+    <script type="text/javascript" src="JS/jquery-2.1.1.js"></script>
+    <script type="text/javascript" src="JS/jquery-ui"></script>
+    <script type="text/javascript" src="JS/scriptAddUser.js"></script>
+    <script type="text/javascript" src="JS/bootstrap.js"></script>
+
+</head>
+
+<body>
+    <div id="wrapper">
+
+        <div id="title">
+            <h1>Bayview Glen Student System</h1>
+        </div>
+
+        <div id="main">
+            <div id="centerContainer">
+                <div id="textFieldsAdmin">
+                    <form>
+
+                        <select id="accountType" class="textBox">
+                            <option value="" disabled selected>Select account type...</option>
+                            <option value="student">Student</option>
+                            <option value="admin">Administrator</option>
+                        </select>
+
+                        <input type="text" id="fName" class="textBox" placeholder="First Name">
+                        <input type="text" id="lName" class="textBox" placeholder="Last Name">
+                        <input type="text" id="student_id" class="textBox" placeholder="Student ID">
+                        <input type="text" id="username" class="textBox" placeholder="Username">
+                        <input type="password" id="newPass" class="textBox" placeholder="Password">
+                        <input type="password" id="newPass2" class="textBox" placeholder="Retype password">
+                        <div id = "noteStudent">The student's password will be set to the username. The student will need to change it to something secure.</div>
+                        <div id = "noteAdmin">The password must contain at least 6 characters. At least 1 upper case character, 1 lower case character, and 1 number must be included.</div>
+                        <br/>
+
+                        <div style="text-align:center">
+                            <input type="button" id="submit" value="Submit" class="button">
+                            <input type="button" id="cancel" value="Cancel" class="button">
+                        </div>
+
+                    </form>
+                </div>
+            </div>
+
+        </div>
+
+        <div id="footer">2015, Bayview Glen. Aaron Strahle, George Marinosyan.</div>
+
+    </div>
+</body>
+
+</html>
